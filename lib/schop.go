@@ -30,7 +30,7 @@ func Search(ip string) Result {
 	addrs, err := GetAddrs(fqdn)
 
 	for _, addr := range addrs {
-		if IsIPv6(addr) == true {
+		if IsIPv6(addr) {
 			r.IPv6 = addr
 		}
 
